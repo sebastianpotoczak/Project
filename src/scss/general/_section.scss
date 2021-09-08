@@ -4,12 +4,20 @@ section{
     height: 90vh;
     width: 100%;
     padding-top: 70px;
+    @include notebook{
+        height: 110vh;
+    }
+   
 
     .section_contain{
         display: flex;
         justify-content: space-between;
         align-items: center;
        margin-top: 70px;
+       padding: 0 15px;
+       @include notebook{
+           flex-direction: column;
+       }
     }
     .section_text{
         max-width: 700px;
@@ -19,6 +27,9 @@ section{
         border-right: 2px solid $primaryColor;
        
         border-bottom: 2px solid $primaryColor;
+        @include notebook{
+            margin-bottom: 15px;
+        }
         
         h1{
             font-size: 35px;
@@ -39,6 +50,20 @@ section{
     img{
         height: 80vh;
         width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include notebook{
+           
+            height: 55vh;
+            width: 30%;
+        }
+        @include tablet{
+            width: 40%;
+        }
+        @include mobile{
+            height: 20%;
+        }
     }
 }
 
