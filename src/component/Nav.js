@@ -1,19 +1,29 @@
-import { render } from '@testing-library/react';
 import React, { useState } from 'react';
+import Index from '../index'
+import App from '../index'
 
 
 
 const Nav = () => {
     const[change, setChange] = useState(false);
+    const url = "http://localhost:3000/#/termin"
+    const mainurl = "http://localhost:3000/#/"
     
+
     const Tooltip = () => {
         if(change === true){
             return  (
-                <div className="tooltip_contain">           
-                    <a className="tooltip_nav" href="#">Strona główna</a>
-                    <a className="tooltip_nav" href="#">Terminy</a>
+              
+                <div className="tooltip_contain">   
+                    
+                     <a className="tooltip_nav" href={mainurl}>Strona głowna</a>
+                    <a className="tooltip_nav" href={url} >Terminy</a>
                     <a className="tooltip_nav" href="#">Kontakt</a>
+                     
+                
+               
                </div>
+              
             )        
         }else{
             return <> </>

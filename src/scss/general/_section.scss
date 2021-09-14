@@ -22,11 +22,11 @@ section{
     .section_text{
         max-width: 700px;
         font-family: 'Philosopher', sans-serif;
-        color: $primaryColor;
+        color: black;
         padding-bottom: 10px;
-        border-right: 2px solid $primaryColor;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
        
-        border-bottom: 2px solid $primaryColor;
         @include notebook{
             margin-bottom: 15px;
         }
@@ -42,8 +42,11 @@ section{
         }
         a{
             text-decoration: none;
-            color: $primaryColor;
+            color: black;
            font-size: 25px;
+           &:hover{
+               color: $primaryColor;
+           }
            
         }
     }
@@ -53,6 +56,7 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow:  8px 8px 24px 0px black;
         @include notebook{
            
             height: 55vh;
@@ -73,9 +77,12 @@ footer{
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-image: url('../../assets/finito.jpeg');
+    box-shadow:  8px 8px 24px 0px black;
     a{
-        color: white;
+        color: black;
+        font-size: 20px;
         text-decoration: none;
+        font-family: 'Philosopher', sans-serif;
     }
 }

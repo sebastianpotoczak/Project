@@ -27,7 +27,7 @@ Uważamy, że kobiece ciało to świątynia dla duszy, która bije blaskiem, gdy
     <a href="mailto:studio@gmail.com">studio@gmail.com</a>
     </div>    
     </div>          
-                <img src={photoSection} />
+                <img src={photoSection} alt="Rainbow girl"/>
                 </div>
                 </div>
                 <footer>

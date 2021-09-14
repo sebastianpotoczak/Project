@@ -1,5 +1,6 @@
 
 const Header = () => {
+  const url = "http://localhost:3000/#/termin"
   return (
     <header>
      
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="contain">
         <div className="header_title_contain">
           <h1 className="header_title">Jedyny taki salon na podhalu!</h1>
-          <a href="#" className="header_text">
+          <a href={url} className="header_text">
           Sprawdz terminy już teraz!
           </a>
         </div>

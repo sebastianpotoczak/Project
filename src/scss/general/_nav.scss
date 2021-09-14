@@ -1,10 +1,11 @@
 nav{
-  background-color: #5F336B;
+    
+    background-image: url("../../assets/finito.jpeg");
     position: fixed;
     width: 100%;
     padding: 2px;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    display: flex;
+  
  
 }
 .nav_text{
@@ -12,14 +13,14 @@ nav{
     flex-direction: row;
     width: 100%;
     height: 100%;
-    color: white;
+    color: $primaryColor;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
     font-family: 'Philosopher', sans-serif;
     a{
         text-decoration: none;   
-        color: white;
+        color: black;
         &:hover{
             color: $primaryColor;
         }
@@ -43,7 +44,7 @@ nav{
   label span{
   
     display: flex;
-    background: white;
+    background: black;
     border-radius:10px;
     height:7px;
     margin: 7px 0;
@@ -119,7 +120,7 @@ nav{
         align-items: center;
         justify-content: center;
         display: flex;
-        color: white;
+        color: black;
         text-decoration: none;
         @include mobile {
           font-size: 20px;
