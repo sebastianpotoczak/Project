@@ -1,0 +1,39 @@
+.service_contain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    .service_position{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        font-family: 'Philosopher', sans-serif;
+    
+        h1{
+            font-size: 45px;
+            margin-top: 15px;
+        }
+        h2{
+            margin-top: 15px;
+            font-size: 35px;
+        }
+        select{
+            width: 200px;
+            height: 25px;
+            margin-top: 15px;
+        }
+        a{
+            margin-top:55px;
+        }
+    }
+}
+.date_position{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+
+}

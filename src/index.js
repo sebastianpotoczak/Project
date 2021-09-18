@@ -10,6 +10,8 @@ import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 import TittleApp from './component/TitleApp';
 import MyApp from './component/DatePicker';
 import Calendar from './component/Calendary';
+import Footer from './component/Footer';
+
 
 const Index = () => {
   return(
@@ -18,6 +20,7 @@ const Index = () => {
     <Header />     
     <Main />
     <AboutMe />
+    <Footer />
   </>
   )
 }
@@ -25,7 +28,6 @@ const App = () => {
   return (
     <>
       <Nav /> 
-
       <Calendar />
     
   </>

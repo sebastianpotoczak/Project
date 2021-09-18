@@ -30,10 +30,6 @@ Uważamy, że kobiece ciało to świątynia dla duszy, która bije blaskiem, gdy
                 <img src={photoSection} alt="Rainbow girl"/>
                 </div>
                 </div>
-                <footer>
-                    <a href="#">Ania x beauty</a>
-                    <a href="http:www.instagram.com" >Instagram</a>
-                </footer>
             </section>
         </>
     )
