@@ -1,29 +1,82 @@
-import { useState, useEffect } from "react"
 
+import { useState, useEffect } from "react"
+import randomColor from "randomcolor";
+import Footer from "./Footer";
 
 
 const Service = ( {props} ) => {
     const[service ,setService] = useState("");
     const[hour, setHour] =useState("")
-
-
+    const[id , setId] = useState(1);
+  
+    let color = randomColor();
     let takeName = localStorage.getItem('savedName');
     let takePhone =localStorage.getItem('savedPhone');
-  
+
     const handleClear = e => {
         
         localStorage.clear('savedName');
         localStorage.clear('savedPhone')
     }
+
+
     const services = e => {
         const newService = e.target.value;
         setService(newService);
+       
     }
+
+
     const handleHour = e => {
         const newHour = e.target.value;
         setHour(newHour);
+      
     }
 
+
+
+    const handleFormSubmit = () => {
+
+
+        if(service === "" || hour === ""){
+            alert("Wybierz usługę i godzine")
+        }else{
+            window.location.reload();   
+
+            setId(prevState => prevState + 1)
+    
+            const dataToSend = {
+            
+             "color": `${color}`,
+             "from": `${props[1]}-${props[2]}-${props[3]}T${hour}:00:00+00:00`,
+             "to": `${props[1]}-${props[2]}-${props[3]}T${hour}:55:00+00:00`,
+             "title": `usługa: ${service}  Imię: ${takeName}   telefon: ${takePhone}`   
+        }
+    
+        fetch(` http://localhost:3005/events`, {
+            method: "POST",
+            body: JSON.stringify(dataToSend),
+            headers: {
+                "Content-Type": "application/json"
+            },
+        }).then((resp) => {
+            if (resp.ok) {
+                return resp.json();
+            } else {
+                alert("termin jest juz zajęty!");
+            }
+        })
+        }
+            
+
+        }
+        
+      
+    
+
+
+   
+    
     return(
         <>
             <div className="service_contain">
@@ -32,11 +85,12 @@ const Service = ( {props} ) => {
                     <div>
                     <h1>Witaj {takeName}!</h1>
                     <h2>Twój numer telefonu: {takePhone}</h2>
-                    <h2 >Data: {props}</h2>
-                    <h2>Usługa: {service}</h2>
-                    <h2>Godzina: {hour}</h2>
+                    <h2 >Data: {props[0]} </h2>
+                    <h2>Usługa: {service} </h2>
+                    <h2>Godzina: {hour}: 00</h2>
              <form>
-                <select onChange={services} value={Service}>
+            
+                <select onChange={services} value={service}>
                     <option value="" disabled>
                         Wybierz usługe
                     </option>
@@ -48,17 +102,21 @@ const Service = ( {props} ) => {
             </form>
             <form>
             <select onChange={handleHour} value={hour}>
-                    <option value="" disabled>
-                        Wybierz godzine!
-                    </option>
-                     <option>8:00</option>
-                        <option>9:00</option>
-                        <option>10:00</option>         
+                    <option disabled value="">Wybierz godzine  </option>
+                
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option> 
+                        <option>11</option>             
+                        <option>13</option>    
+                        <option>14</option>    
+                        <option>15</option>    
+                        <option>16</option>    
                 </select>
             </form>
          
             <a href="http://localhost:3000/#/termin" onClick={handleClear}>Reset danych osobowych!</a>
-            <input type="submit"></input>
+            <input type="submit" onClick={handleFormSubmit}></input>
          
                     </div>
                   
@@ -67,6 +125,7 @@ const Service = ( {props} ) => {
                 </div>
                
             </div>
+            <Footer />
         </>
     )
 }

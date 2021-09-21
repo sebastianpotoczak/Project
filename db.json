@@ -1,25 +1,123 @@
 {
-  "events":[
+  "events": [
     {
-      "id":1,
-      "color":"#fd3153",
-      "from":"2021-09-05T18:00:00+00:00",
-      "to":"2021-09-05T19:00:00+00:00",
-      "title":"This is an event"
+      "id": 1,
+      "color": "#ff0000",
+      "from": "2021-09-13T13:00:00+00:00",
+      "to": "2021-09-13T13:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 2,
+      "color": "#ff0000",
+      "from": "2021-09-18T09:00:00+00:00",
+      "to": "2021-09-18T09:55:00+00:00",
+      "title": "usługa: Makijaż weselny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#ff0000",
+      "from": "2021-09-05T08:00:00+00:00",
+      "to": "2021-09-05T08:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#ff0000",
+      "from": "2021-09-06T08:00:00+00:00",
+      "to": "2021-09-06T08:55:00+00:00",
+      "title": "usługa: Makijaż imprezowy  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#ff0000",
+      "from": "2021-09-23T14:00:00+00:00",
+      "to": "2021-09-23T14:55:00+00:00",
+      "title": "usługa: Makijaż imprezowy  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#8368dd",
+      "from": "2021-09-26T08:00:00+00:00",
+      "to": "2021-09-26T08:55:00+00:00",
+      "title": "usługa: Makijaż imprezowy  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#57e58d",
+      "from": "2021-09-29T10:00:00+00:00",
+      "to": "2021-09-29T10:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#bfa9f9",
+      "from": "2021-09-28T09:00:00+00:00",
+      "to": "2021-09-28T09:55:00+00:00",
+      "title": "usługa: Makijaż weselny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#0ca8d3",
+      "from": "2021-10-12T13:00:00+00:00",
+      "to": "2021-10-12T13:55:00+00:00",
+      "title": "usługa: Makijaż weselny  Imię: Sebastian   telefon: 506704422"
+    },
+    {
+      "id": 1,
+      "color": "#4475ba",
+      "from": "2021-09-22T11:00:00+00:00",
+      "to": "2021-09-22T11:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422"
     },
     {
       "id":2,
-      "color":"#1ccb9e",
-      "from":"2021-09-01T13:00:00+00:00",
-      "to":"2021-09-01T14:00:00+00:00",
-      "title":"This is another event"
+      "color": "#f9f331",
+      "from": "2021-09-14T09:00:00+00:00",
+      "to": "2021-09-14T09:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422"
     },
     {
-      "id":3,
-      "color":"#3694DF",
-      "from":"2021-09-05T12:00:00+00:00",
-      "to":"2021-09-05T20:00:00+00:00",
-      "title":"This is also another event"
+      "color": "#cd96f2",
+      "from": "2021-09-20T10:00:00+00:00",
+      "to": "2021-09-20T10:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422",
+      "id": 3
+    },
+    {
+      "color": "#ffc9f9",
+      "from": "2021-09-19T10:00:00+00:00",
+      "to": "2021-09-19T10:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422",
+      "id": 4
+    },
+    {
+      "color": "#f9fc9c",
+      "from": "2021-09-16T08:00:00+00:00",
+      "to": "2021-09-16T08:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422",
+      "id": 5
+    },
+    {
+      "color": "#92bc31",
+      "from": "2021-09-15T11:00:00+00:00",
+      "to": "2021-09-15T11:55:00+00:00",
+      "title": "usługa: Makijaż weselny  Imię: Sebastian   telefon: 506704422",
+      "id": 6
+    },
+    {
+      "color": "#597cba",
+      "from": "2021-10-13T11:00:00+00:00",
+      "to": "2021-10-13T11:55:00+00:00",
+      "title": "usługa: Makijaż imprezowy  Imię: Sebastian   telefon: 506704422",
+      "id": 7
+    },
+    {
+      "color": "#6df27c",
+      "from": "2021-09-21T16:00:00+00:00",
+      "to": "2021-09-21T16:55:00+00:00",
+      "title": "usługa: Makijaż pernamentny  Imię: Sebastian   telefon: 506704422",
+      "id": 8
     }
   ]
 }
