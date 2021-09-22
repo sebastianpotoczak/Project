@@ -11,6 +11,7 @@ import TittleApp from './component/TitleApp';
 import MyApp from './component/DatePicker';
 import Calendar from './component/Calendary';
 import Footer from './component/Footer';
+import Service from './component/Service';
 
 
 const Index = () => {
@@ -41,6 +42,7 @@ const ReactRouter = () => {
         <Switch>
           <Route exact path='/' component={Index} />
           <Route exact path='/termin' component={App} />
+     
         </Switch>     
     </Router>
   )

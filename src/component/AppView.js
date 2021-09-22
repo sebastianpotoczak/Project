@@ -10,13 +10,12 @@ const AppView = () =>{
  
 
     const Calendary = () => {
-        const[years, setYear] = useState("")
+        const[years, setYear] = useState("");
         const[months, setMonths] = useState("01");
         const[click, setClick] = useState(false);
-        const[events, setEvents] = useState(null)
-
+        const[events, setEvents] = useState(null);
         const[day, setDay] = useState("");
-        const[number, setNumber] = useState("")
+        const[number, setNumber] = useState("");
         
 
      
@@ -43,6 +42,10 @@ const AppView = () =>{
         const handleClick = () => {
             setClick(true)
         }
+
+
+
+
 
         const changeDate = () => {
             const takeDate = document.querySelector(".calendarHeader > h1")
@@ -140,7 +143,7 @@ const AppView = () =>{
        }else{
            return(
                <>
-            <Service props={[day ,years,months, number]}/>
+            <Service events={events} props={[day ,years,months, number]}/>
            
             </>
            )
