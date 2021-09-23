@@ -1,37 +1,35 @@
-.calendarWrapper{
-   letter-spacing: 0;
+
+
+*{
+   font-family: inherit !important;
 }
-.dailyEventWrapper {
-   height: 60px;
-}
+
 
 .dayEvent{
    width: 100% !important;
    left: 0 !important;
    font-size: 20px;
 }
-
-
-.calendary_position{
-
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
-   font-family: 'Philosopher', sans-serif;
-   .calendarWrapper{
-      max-height: 70vh;
-      width: 1100px;
+.dayCell{
+  
+   &:hover{
+      background-color: whitesmoke;
    }
-   .modeWrapper{
-      display: none;
-   }
-   .calendarHeader{
-      margin-bottom: 15px;
+}
+
+
+
+   
+   .calendary_position{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
    }
    .login_text_position{
+      height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -43,6 +41,9 @@
       h1{
          font-size: 35px;
          margin-top: 15px;
+         @include mobile{
+            font-size: 25px;
+         }
       }
       h2{
          font-size: 25px;
@@ -53,7 +54,14 @@
          font-size: 20px;
       }
    }
+
+
+.calendarWrapper{
+   width: 95% !important;
+  
+   align-items: center;
+   justify-content: center;
+   max-width: 1400px;
+  
 }
-
-
 
