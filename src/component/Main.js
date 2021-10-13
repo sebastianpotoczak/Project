@@ -1,7 +1,7 @@
 import React from 'react';
-import firstPhoto from "../assets/kwiatek.jpeg";
-import secondPhoto from "../assets/2photo.jpg";
 import thirdPhoto from "../assets/kwiatek.jpeg";
+import secondPhoto from "../assets/2photo.jpg";
+import firstPhoto from "../assets/vase.jpg";
 
 const Main = () => {
     return(

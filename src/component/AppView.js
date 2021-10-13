@@ -136,7 +136,7 @@ const AppView = () =>{
            <CalendarAwesome events={events} onChange={changeDate} onClickTimeLine={handleClick}/>
            </div>
             </div>         
-            <Footer />
+           
 
             </>
            )

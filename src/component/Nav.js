@@ -18,9 +18,7 @@ const Nav = () => {
                     
                      <a className="tooltip_nav" href={mainurl}>Strona głowna</a>
                     <a className="tooltip_nav" href={url} >Terminy</a>
-                    <a className="tooltip_nav" href="#">Kontakt</a>
-                     
-                
+                    
                
                </div>
               
@@ -45,7 +43,7 @@ const Nav = () => {
       <nav>
       <div className="contain">
         <div className="nav_text">
-        <a href="#">Ania x beauty</a>
+        <a href="#">Be beauty</a>
       <label for="check" >
       <input type="checkbox" id="check" onChange={handleClick}/>  
       <span></span>

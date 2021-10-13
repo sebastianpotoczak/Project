@@ -8,7 +8,6 @@ const Service = ( {props, events} ) => {
     const[service ,setService] = useState("");
     const[hour, setHour] =useState("")
 
-
    
     let color = randomColor();
 
@@ -44,7 +43,7 @@ const Service = ( {props, events} ) => {
         const dateChange = events.find(el => el.from === `${props[1]}-${props[2]}-${props[3]}T${hour}:00:00+00:00`);
         
         if (dateChange) {
-            alert("taki termin juz jest")
+            alert("Termin jest już zajęty")
 
             return
         }
@@ -77,11 +76,6 @@ const Service = ( {props, events} ) => {
         }
         }
         
-   
-
-
-   
-    
     return(
         <>
             <div className="service_contain">
@@ -92,7 +86,7 @@ const Service = ( {props, events} ) => {
                     <h2>Twój numer telefonu: {takePhone}</h2>
                     <h2 >Data: {props[0]} </h2>
                     <h2>Usługa: {service} </h2>
-                    <h2>Godzina: {hour}: 00</h2>
+                    <h2>Godzina: {hour} : 00</h2>
              <form>
             
                 <select onChange={services} value={service}>
@@ -108,20 +102,27 @@ const Service = ( {props, events} ) => {
             <form>
             <select onChange={handleHour} value={hour}>
                     <option disabled value="">Wybierz godzine  </option>
-                
-                        <option>08</option>
-                        <option>09</option>
+                    <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
                         <option>10</option> 
                         <option>11</option>             
                         <option>13</option>    
                         <option>14</option>    
                         <option>15</option>    
                         <option>16</option>    
+                        <option>17</option>   
+                        <option>18</option>   
+                        <option>19</option>   
                 </select>
             </form>
+            <div className="submit_contain"> 
+                
+                <input type="submit" className="add_service" onClick={handleFormSubmit}></input>
+                <a href="#" onClick={handleClear}>Reset danych osobowych!</a>
          
-            <a href="#" onClick={handleClear}>Reset danych osobowych!</a>
-            <input type="submit" onClick={handleFormSubmit}></input>
+            </div>
+         
          
                     </div>
                   
@@ -130,7 +131,7 @@ const Service = ( {props, events} ) => {
                 </div>
                
             </div>
-            <Footer />
+          
         </>
     )
 }
