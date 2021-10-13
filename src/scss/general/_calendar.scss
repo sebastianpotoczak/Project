@@ -4,7 +4,9 @@
    font-family: inherit !important;
 }
 
-
+.modeWrapper{
+   display: none;
+}
 .dayEvent{
    width: 100% !important;
    left: 0 !important;
@@ -17,9 +19,6 @@
    }
 }
 
-
-
-   
    .calendary_position{
       height: 100vh;
       display: flex;

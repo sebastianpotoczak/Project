@@ -2,7 +2,7 @@ article{
     box-shadow: 8px 8px 24px 0px $primaryColor;
     height: 165vh;
     color: white;
-    background-color: $primaryColor;
+    background-image: url("../../assets/wallpaper.jpg");
     @include notebook {
             height: 180vh;
     }

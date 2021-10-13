@@ -26,7 +26,8 @@ header{
         .header_img{
            
             display: flex;
-              background-image: url("../../assets/studio1.jpeg");
+              background-color: white;
+             background-image: url("../../assets/readyHeader.jpeg");
               width: 100%;
               height: 100%;
               background-position: center;
@@ -62,7 +63,7 @@ header{
                     justify-content: center;
                     margin-top: 30%;
                     letter-spacing: 0;
-                    color: $primaryColor;
+                    color: white;
                     font-weight: bold;
                     font-size: 75px;
                     text-shadow: 2px 2px black;
@@ -71,7 +72,7 @@ header{
                        font-size: 55px;
                    }
                    @include mobile{
-                       font-size: 25px;
+                       font-size: 20px;
                    }
                 }
                 a{

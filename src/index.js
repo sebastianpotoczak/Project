@@ -7,11 +7,9 @@ import Nav from './component/Nav'
 import Main from './component/Main'
 import AboutMe from './component/AboutMe'
 import { Route, HashRouter as Router, Switch } from 'react-router-dom';
-import TittleApp from './component/TitleApp';
-import MyApp from './component/DatePicker';
 import Calendar from './component/Calendary';
 import Footer from './component/Footer';
-import Service from './component/Service';
+
 
 
 const Index = () => {

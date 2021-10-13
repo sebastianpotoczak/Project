@@ -8,7 +8,6 @@ const Service = ( {props, events} ) => {
     const[service ,setService] = useState("");
     const[hour, setHour] =useState("")
 
-
    
     let color = randomColor();
 
@@ -77,11 +76,6 @@ const Service = ( {props, events} ) => {
         }
         }
         
-   
-
-
-   
-    
     return(
         <>
             <div className="service_contain">
@@ -122,9 +116,13 @@ const Service = ( {props, events} ) => {
                         <option>19</option>   
                 </select>
             </form>
+            <div className="submit_contain"> 
+                
+                <input type="submit" className="add_service" onClick={handleFormSubmit}></input>
+                <a href="#" onClick={handleClear}>Reset danych osobowych!</a>
          
-            <a href="#" onClick={handleClear}>Reset danych osobowych!</a>
-            <input type="submit" onClick={handleFormSubmit}></input>
+            </div>
+         
          
                     </div>
                   
